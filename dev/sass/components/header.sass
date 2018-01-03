@@ -1,0 +1,90 @@
+// header
+//-----------------------------------------------------------------------------------
+.mod-white
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  background: white
+  border-bottom: 1px solid #e4e4e4
+  z-index: 10
+  .col-xs-6
+    @media (max-width: $screen-xs-max)
+      position: static
+
+  .logo
+    margin: 20px 0
+    display: inline-block
+
+    @media (max-width: $screen-xs-max)
+      margin-left: 10px
+      margin-top: 12px
+      margin-bottom: 10px
+    .h-mob
+      display: inline-block
+      width: 123px
+      height: 39px
+      @media (max-width: $screen-xs-max)
+        display: none
+    .s-mob
+      display: none
+      @media (max-width: $screen-xs-max)
+        display: inline-block
+        width: 23px
+        height: 32px
+
+  .nav
+    display: inline-block
+    @extend %clear-fix
+    margin: 29px 0
+    @media (max-width: $screen-xs-max)
+      margin-right: 10px
+      margin-top: 10px
+      margin-bottom: 5px
+    li
+      float: left
+      @media (max-width: $screen-xs-max)
+        margin-right: 0
+        text-align: center
+        float: none
+      &:not(:last-child)
+        margin-right: 35px
+        @media (max-width: $screen-xs-max)
+          margin-right: 0
+      &:first-child
+        @media (max-width: $screen-xs-max)
+          position: absolute
+          left: 50%
+          transform: translateX(-50%)
+    a
+      display: inline-block
+      color: rgba(#444956, 0.5)
+      font-family: $circ
+      font-size: 14px
+      font-weight: 300
+      padding-left: 35px
+      position: relative
+      transition: all 0.2s
+      @media (max-width: $screen-xs-max)
+        font-family: $circ
+        font-size: 10px
+        font-weight: 500
+        padding-left: 0
+        padding-top: 25px
+      &:hover
+        color: #3a6a75
+        text-decoration: none
+      .icon
+        position: absolute
+        left: 8px
+        transform: translateY(-50%)
+        top: 50%
+        font-size: 18px
+        @media (max-width: $screen-xs-max)
+          top: 0
+          left: 50%
+          transform: translateY(0)
+          transform: translateX(-50%)
+
+
+

@@ -1,0 +1,26 @@
+# Source castom files
+/node_modules/**
+.idea/**
+.sass-cache/**
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.AppleDouble
+.LSOverride
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project ---------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------
+
+# CSS files and .map
+/css/*.css
+*.map
+
+# HTML files
+/*.html
+.idea/
